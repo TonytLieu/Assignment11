@@ -1,0 +1,666 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB53F08B2AF432BE00FC15A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB53F08A2AF432BE00FC15A6 /* AppDelegate.swift */; };
+		EB53F08D2AF432BE00FC15A6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB53F08C2AF432BE00FC15A6 /* SceneDelegate.swift */; };
+		EB53F08F2AF432BE00FC15A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB53F08E2AF432BE00FC15A6 /* ViewController.swift */; };
+		EB53F0922AF432BE00FC15A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB53F0902AF432BE00FC15A6 /* Main.storyboard */; };
+		EB53F0942AF432C000FC15A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB53F0932AF432C000FC15A6 /* Assets.xcassets */; };
+		EB53F0972AF432C000FC15A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB53F0952AF432C000FC15A6 /* LaunchScreen.storyboard */; };
+		EB53F0A22AF432C000FC15A6 /* Digimon_Pokemon_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB53F0A12AF432C000FC15A6 /* Digimon_Pokemon_Tests.swift */; };
+		EB53F0AC2AF432C000FC15A6 /* Digimon_Pokemon_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB53F0AB2AF432C000FC15A6 /* Digimon_Pokemon_UITests.swift */; };
+		EB53F0AE2AF432C000FC15A6 /* Digimon_Pokemon_UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB53F0AD2AF432C000FC15A6 /* Digimon_Pokemon_UITestsLaunchTests.swift */; };
+		EB53F0C52AF43CEB00FC15A6 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB53F0C42AF43CEB00FC15A6 /* NetworkManager.swift */; };
+		EB53F0C72AF43E4E00FC15A6 /* PokemonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB53F0C62AF43E4E00FC15A6 /* PokemonTableViewController.swift */; };
+		EB53F0C92AF43F1600FC15A6 /* PokemonList in Resources */ = {isa = PBXBuildFile; fileRef = EB53F0C82AF43F1600FC15A6 /* PokemonList */; };
+		EB53F0CB2AF43F4B00FC15A6 /* PokemonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB53F0CA2AF43F4B00FC15A6 /* PokemonModel.swift */; };
+		EB53F0CD2AF4435700FC15A6 /* PokemonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB53F0CC2AF4435700FC15A6 /* PokemonViewController.swift */; };
+		EB53F0E12AF488F200FC15A6 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB53F0E02AF488F200FC15A6 /* TableViewCell.xib */; };
+		EB53F0E92AF4F6DE00FC15A6 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB53F0E82AF4F6DE00FC15A6 /* TableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EB53F09E2AF432C000FC15A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB53F07F2AF432BE00FC15A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB53F0862AF432BE00FC15A6;
+			remoteInfo = "Digimon(Pokemon)";
+		};
+		EB53F0A82AF432C000FC15A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB53F07F2AF432BE00FC15A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB53F0862AF432BE00FC15A6;
+			remoteInfo = "Digimon(Pokemon)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EB53F0872AF432BE00FC15A6 /* Digimon(Pokemon).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Digimon(Pokemon).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB53F08A2AF432BE00FC15A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EB53F08C2AF432BE00FC15A6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EB53F08E2AF432BE00FC15A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EB53F0912AF432BE00FC15A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EB53F0932AF432C000FC15A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB53F0962AF432C000FC15A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EB53F0982AF432C000FC15A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB53F09D2AF432C000FC15A6 /* Digimon(Pokemon)Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Digimon(Pokemon)Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB53F0A12AF432C000FC15A6 /* Digimon_Pokemon_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Digimon_Pokemon_Tests.swift; sourceTree = "<group>"; };
+		EB53F0A72AF432C000FC15A6 /* Digimon(Pokemon)UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Digimon(Pokemon)UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB53F0AB2AF432C000FC15A6 /* Digimon_Pokemon_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Digimon_Pokemon_UITests.swift; sourceTree = "<group>"; };
+		EB53F0AD2AF432C000FC15A6 /* Digimon_Pokemon_UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Digimon_Pokemon_UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EB53F0C42AF43CEB00FC15A6 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		EB53F0C62AF43E4E00FC15A6 /* PokemonTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonTableViewController.swift; sourceTree = "<group>"; };
+		EB53F0C82AF43F1600FC15A6 /* PokemonList */ = {isa = PBXFileReference; lastKnownFileType = text; path = PokemonList; sourceTree = "<group>"; };
+		EB53F0CA2AF43F4B00FC15A6 /* PokemonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonModel.swift; sourceTree = "<group>"; };
+		EB53F0CC2AF4435700FC15A6 /* PokemonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonViewController.swift; sourceTree = "<group>"; };
+		EB53F0E02AF488F200FC15A6 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		EB53F0E82AF4F6DE00FC15A6 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewCell.swift; path = ../TableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB53F0842AF432BE00FC15A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB53F09A2AF432C000FC15A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB53F0A42AF432C000FC15A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB53F07E2AF432BE00FC15A6 = {
+			isa = PBXGroup;
+			children = (
+				EB53F0892AF432BE00FC15A6 /* Digimon(Pokemon) */,
+				EB53F0A02AF432C000FC15A6 /* Digimon(Pokemon)Tests */,
+				EB53F0AA2AF432C000FC15A6 /* Digimon(Pokemon)UITests */,
+				EB53F0882AF432BE00FC15A6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EB53F0882AF432BE00FC15A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB53F0872AF432BE00FC15A6 /* Digimon(Pokemon).app */,
+				EB53F09D2AF432C000FC15A6 /* Digimon(Pokemon)Tests.xctest */,
+				EB53F0A72AF432C000FC15A6 /* Digimon(Pokemon)UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB53F0892AF432BE00FC15A6 /* Digimon(Pokemon) */ = {
+			isa = PBXGroup;
+			children = (
+				EB53F0C12AF43A0E00FC15A6 /* Network */,
+				EB53F0C02AF43A0600FC15A6 /* View */,
+				EB53F0BF2AF439ED00FC15A6 /* Controller */,
+				EB53F0BE2AF439D700FC15A6 /* Model */,
+				EB53F08A2AF432BE00FC15A6 /* AppDelegate.swift */,
+				EB53F08C2AF432BE00FC15A6 /* SceneDelegate.swift */,
+				EB53F0902AF432BE00FC15A6 /* Main.storyboard */,
+				EB53F0932AF432C000FC15A6 /* Assets.xcassets */,
+				EB53F0952AF432C000FC15A6 /* LaunchScreen.storyboard */,
+				EB53F0E02AF488F200FC15A6 /* TableViewCell.xib */,
+				EB53F0982AF432C000FC15A6 /* Info.plist */,
+			);
+			path = "Digimon(Pokemon)";
+			sourceTree = "<group>";
+		};
+		EB53F0A02AF432C000FC15A6 /* Digimon(Pokemon)Tests */ = {
+			isa = PBXGroup;
+			children = (
+				EB53F0A12AF432C000FC15A6 /* Digimon_Pokemon_Tests.swift */,
+			);
+			path = "Digimon(Pokemon)Tests";
+			sourceTree = "<group>";
+		};
+		EB53F0AA2AF432C000FC15A6 /* Digimon(Pokemon)UITests */ = {
+			isa = PBXGroup;
+			children = (
+				EB53F0AB2AF432C000FC15A6 /* Digimon_Pokemon_UITests.swift */,
+				EB53F0AD2AF432C000FC15A6 /* Digimon_Pokemon_UITestsLaunchTests.swift */,
+			);
+			path = "Digimon(Pokemon)UITests";
+			sourceTree = "<group>";
+		};
+		EB53F0BE2AF439D700FC15A6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EB53F0C82AF43F1600FC15A6 /* PokemonList */,
+				EB53F0CA2AF43F4B00FC15A6 /* PokemonModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EB53F0BF2AF439ED00FC15A6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EB53F08E2AF432BE00FC15A6 /* ViewController.swift */,
+				EB53F0CC2AF4435700FC15A6 /* PokemonViewController.swift */,
+				EB53F0C62AF43E4E00FC15A6 /* PokemonTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EB53F0C02AF43A0600FC15A6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EB53F0E82AF4F6DE00FC15A6 /* TableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EB53F0C12AF43A0E00FC15A6 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EB53F0C42AF43CEB00FC15A6 /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB53F0862AF432BE00FC15A6 /* Digimon(Pokemon) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB53F0B12AF432C000FC15A6 /* Build configuration list for PBXNativeTarget "Digimon(Pokemon)" */;
+			buildPhases = (
+				EB53F0832AF432BE00FC15A6 /* Sources */,
+				EB53F0842AF432BE00FC15A6 /* Frameworks */,
+				EB53F0852AF432BE00FC15A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Digimon(Pokemon)";
+			productName = "Digimon(Pokemon)";
+			productReference = EB53F0872AF432BE00FC15A6 /* Digimon(Pokemon).app */;
+			productType = "com.apple.product-type.application";
+		};
+		EB53F09C2AF432C000FC15A6 /* Digimon(Pokemon)Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB53F0B42AF432C000FC15A6 /* Build configuration list for PBXNativeTarget "Digimon(Pokemon)Tests" */;
+			buildPhases = (
+				EB53F0992AF432C000FC15A6 /* Sources */,
+				EB53F09A2AF432C000FC15A6 /* Frameworks */,
+				EB53F09B2AF432C000FC15A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB53F09F2AF432C000FC15A6 /* PBXTargetDependency */,
+			);
+			name = "Digimon(Pokemon)Tests";
+			productName = "Digimon(Pokemon)Tests";
+			productReference = EB53F09D2AF432C000FC15A6 /* Digimon(Pokemon)Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EB53F0A62AF432C000FC15A6 /* Digimon(Pokemon)UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB53F0B72AF432C000FC15A6 /* Build configuration list for PBXNativeTarget "Digimon(Pokemon)UITests" */;
+			buildPhases = (
+				EB53F0A32AF432C000FC15A6 /* Sources */,
+				EB53F0A42AF432C000FC15A6 /* Frameworks */,
+				EB53F0A52AF432C000FC15A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB53F0A92AF432C000FC15A6 /* PBXTargetDependency */,
+			);
+			name = "Digimon(Pokemon)UITests";
+			productName = "Digimon(Pokemon)UITests";
+			productReference = EB53F0A72AF432C000FC15A6 /* Digimon(Pokemon)UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB53F07F2AF432BE00FC15A6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					EB53F0862AF432BE00FC15A6 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					EB53F09C2AF432C000FC15A6 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = EB53F0862AF432BE00FC15A6;
+					};
+					EB53F0A62AF432C000FC15A6 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = EB53F0862AF432BE00FC15A6;
+					};
+				};
+			};
+			buildConfigurationList = EB53F0822AF432BE00FC15A6 /* Build configuration list for PBXProject "Digimon(Pokemon)" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB53F07E2AF432BE00FC15A6;
+			productRefGroup = EB53F0882AF432BE00FC15A6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB53F0862AF432BE00FC15A6 /* Digimon(Pokemon) */,
+				EB53F09C2AF432C000FC15A6 /* Digimon(Pokemon)Tests */,
+				EB53F0A62AF432C000FC15A6 /* Digimon(Pokemon)UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB53F0852AF432BE00FC15A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB53F0C92AF43F1600FC15A6 /* PokemonList in Resources */,
+				EB53F0E12AF488F200FC15A6 /* TableViewCell.xib in Resources */,
+				EB53F0972AF432C000FC15A6 /* LaunchScreen.storyboard in Resources */,
+				EB53F0942AF432C000FC15A6 /* Assets.xcassets in Resources */,
+				EB53F0922AF432BE00FC15A6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB53F09B2AF432C000FC15A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB53F0A52AF432C000FC15A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB53F0832AF432BE00FC15A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB53F0C72AF43E4E00FC15A6 /* PokemonTableViewController.swift in Sources */,
+				EB53F0E92AF4F6DE00FC15A6 /* TableViewCell.swift in Sources */,
+				EB53F0C52AF43CEB00FC15A6 /* NetworkManager.swift in Sources */,
+				EB53F08F2AF432BE00FC15A6 /* ViewController.swift in Sources */,
+				EB53F0CB2AF43F4B00FC15A6 /* PokemonModel.swift in Sources */,
+				EB53F08B2AF432BE00FC15A6 /* AppDelegate.swift in Sources */,
+				EB53F0CD2AF4435700FC15A6 /* PokemonViewController.swift in Sources */,
+				EB53F08D2AF432BE00FC15A6 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB53F0992AF432C000FC15A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB53F0A22AF432C000FC15A6 /* Digimon_Pokemon_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB53F0A32AF432C000FC15A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB53F0AE2AF432C000FC15A6 /* Digimon_Pokemon_UITestsLaunchTests.swift in Sources */,
+				EB53F0AC2AF432C000FC15A6 /* Digimon_Pokemon_UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EB53F09F2AF432C000FC15A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB53F0862AF432BE00FC15A6 /* Digimon(Pokemon) */;
+			targetProxy = EB53F09E2AF432C000FC15A6 /* PBXContainerItemProxy */;
+		};
+		EB53F0A92AF432C000FC15A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB53F0862AF432BE00FC15A6 /* Digimon(Pokemon) */;
+			targetProxy = EB53F0A82AF432C000FC15A6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EB53F0902AF432BE00FC15A6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB53F0912AF432BE00FC15A6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EB53F0952AF432C000FC15A6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB53F0962AF432C000FC15A6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB53F0AF2AF432C000FC15A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EB53F0B02AF432C000FC15A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB53F0B22AF432C000FC15A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Digimon(Pokemon)/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "stuff.Digimon-Pokemon-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EB53F0B32AF432C000FC15A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Digimon(Pokemon)/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "stuff.Digimon-Pokemon-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EB53F0B52AF432C000FC15A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "stuff.Digimon-Pokemon-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Digimon(Pokemon).app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Digimon(Pokemon)";
+			};
+			name = Debug;
+		};
+		EB53F0B62AF432C000FC15A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "stuff.Digimon-Pokemon-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Digimon(Pokemon).app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Digimon(Pokemon)";
+			};
+			name = Release;
+		};
+		EB53F0B82AF432C000FC15A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "stuff.Digimon-Pokemon-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Digimon(Pokemon)";
+			};
+			name = Debug;
+		};
+		EB53F0B92AF432C000FC15A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "stuff.Digimon-Pokemon-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Digimon(Pokemon)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB53F0822AF432BE00FC15A6 /* Build configuration list for PBXProject "Digimon(Pokemon)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB53F0AF2AF432C000FC15A6 /* Debug */,
+				EB53F0B02AF432C000FC15A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB53F0B12AF432C000FC15A6 /* Build configuration list for PBXNativeTarget "Digimon(Pokemon)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB53F0B22AF432C000FC15A6 /* Debug */,
+				EB53F0B32AF432C000FC15A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB53F0B42AF432C000FC15A6 /* Build configuration list for PBXNativeTarget "Digimon(Pokemon)Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB53F0B52AF432C000FC15A6 /* Debug */,
+				EB53F0B62AF432C000FC15A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB53F0B72AF432C000FC15A6 /* Build configuration list for PBXNativeTarget "Digimon(Pokemon)UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB53F0B82AF432C000FC15A6 /* Debug */,
+				EB53F0B92AF432C000FC15A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB53F07F2AF432BE00FC15A6 /* Project object */;
+}
